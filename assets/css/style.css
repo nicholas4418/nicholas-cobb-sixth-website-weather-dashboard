@@ -1,0 +1,36 @@
+/*Gradient for page header*/
+#page-header {
+    background: linear-gradient(to right, #3F7ECF, #3142CE, #16217F);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+li {
+    cursor: pointer;
+}
+
+/*Needed for better alignment of the five day forecast cards*/
+#five-day {
+    padding-left: 15px;
+
+}
+
+@media only screen and (max-width: 992px) {
+    #search-input {
+        width: 100%;
+    }
+
+    #search-button {
+        width: 100%;
+    }
+
+    #five-day .row {
+        justify-content: center;
+    }
+}
+

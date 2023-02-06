@@ -13,25 +13,32 @@
 </head>
 
 <body>
-    <header class="container-fluid text-center text white bg-primary p-2">
+    <!--container fluid so that page header spans the entire page-->
+    <header class="container-fluid text-center text-white p-2" id="page-header">
         <h1>Weather Dashboard</h1>
     </header>
 
     <div class="container-fluid">
         <div class="row">
+            <!--aside tag used so that search bar and history are placed to one side-->
             <aside class="col-lg-2">
-                <h5 class="mt-1">Search for a City:</h5>
+                <h2 class="mt-4">Search for a City:</h2>
+                <!--Search bar-->
                 <div class="for-inline form-group">
-                    <input class="form-control" type="text" id="search-value" />
+                    <!--Input for search bar-->
+                    <input class="form-control" type="text" id="search-input" />
                 </div>
+                <!--Button for search bar-->
                 <button class="btn btn-primary col-12" id="search-button">Search</i></button>
-
+                <!--Search history unordered list-->
                 <ul class="list-group history"></ul>
             </aside>
 
             <div class="col-lg-9">
-                <div id="today" class="mt-3"></div>
-                <div id="forecast" class="card-deck mt-3"></div>
+                <!--Main weather card-->
+                <div id="current-weather" class="mt-3"></div>
+                <!--Placement of five day forecast cards-->
+                <div id="five-day" class="card-deck mt-3"></div>
             </div>
         </div>
     </div>
